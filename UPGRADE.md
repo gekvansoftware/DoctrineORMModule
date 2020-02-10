@@ -20,7 +20,7 @@
 
  * [#450](https://github.com/doctrine/DoctrineORMModule/pull/450) Use stable release for DoctrineModule
  * [#443](https://github.com/doctrine/DoctrineORMModule/pull/443) Added ability to configure the version column in MigrationsConfigurationFactory
- * [#457](https://github.com/doctrine/DoctrineORMModule/pull/457) Fixed compatibility with Zend\Mvc 2.7
+ * [#457](https://github.com/doctrine/DoctrineORMModule/pull/457) Fixed compatibility with Laminas\Mvc 2.7
  * [#458](https://github.com/doctrine/DoctrineORMModule/pull/458) Drop PHP 5.4 and allow PHP 7 on Travis
 
 # 0.9.2
@@ -53,7 +53,7 @@
  * [#357](https://github.com/doctrine/DoctrineORMModule/pull/357) Modify sql_logger_collector class factory
  * [#360](https://github.com/doctrine/DoctrineORMModule/pull/360) Add example for entity_resolver
  * [#359](https://github.com/doctrine/DoctrineORMModule/pull/359) Update deprecated dialog console helper
- * [#363](https://github.com/doctrine/DoctrineORMModule/pull/363) Prevent Zend\Form\Element\File types inherit of StringLength validator...
+ * [#363](https://github.com/doctrine/DoctrineORMModule/pull/363) Prevent Laminas\Form\Element\File types inherit of StringLength validator...
  * [#365](https://github.com/doctrine/DoctrineORMModule/pull/365) Re-enable scrutinizer code coverage
  * [#373](https://github.com/doctrine/DoctrineORMModule/pull/373) Add doc for cache
  * [#347](https://github.com/doctrine/DoctrineORMModule/pull/347) added extra check in handleRequiredField
@@ -76,11 +76,11 @@
 
  * [`DoctrineORMModule\Form\Annotation\AnnotationBuilder`](https://github.com/doctrine/DoctrineORMModule/blob/master/src/DoctrineORMModule/Form/Annotation/AnnotationBuilder.php)
    does now also handle associations [#193](https://github.com/doctrine/DoctrineORMModule/pull/193)
- * `DoctrineORMModule\Module` does not implement `Zend\ModuleManager\Feature\AutoloaderProviderInterface` anymore.
+ * `DoctrineORMModule\Module` does not implement `Laminas\ModuleManager\Feature\AutoloaderProviderInterface` anymore.
    Please switch to composer autoloading.
  * [`DoctrineORMModule\Form\Annotation\ElementAnnotationsListener`](https://github.com/doctrine/DoctrineORMModule/blob/master/src/DoctrineORMModule/Form/Annotation/ElementAnnotationsListener.php)
    was updated to properly handle input specs for elements and changed the default elements for datetime and date to
-   Zend\Form\Element\DateTime and Zend\Form\Element\Date respectively.
+   Laminas\Form\Element\DateTime and Laminas\Form\Element\Date respectively.
 
 # 0.4.0
 Version `0.4.0` has been rewritten from scratch using the new ServiceManager component of ZF2. This allows for
